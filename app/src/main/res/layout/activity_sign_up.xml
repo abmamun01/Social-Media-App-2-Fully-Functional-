@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignUpActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/black">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crete Account"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_35font_mdp"
+        android:textAlignment="center"
+        android:layout_marginBottom="@dimen/_30mdp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45mdp"
+        android:hint="Email"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/custom_email_input"
+        android:drawablePadding="@dimen/_8mdp"
+        android:background="@drawable/custom_input"
+        android:textColorHint="@color/blue_grey_100"
+        android:id="@+id/signUpEmail"
+        android:paddingStart="@dimen/_8mdp"
+        android:layout_marginStart="@dimen/_8mdp"
+        android:layout_marginEnd="@dimen/_8mdp"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45mdp"
+        android:hint="Password"
+        android:textColor="@color/white"
+
+        android:drawableStart="@drawable/custom_email_input"
+        android:drawablePadding="@dimen/_8mdp"
+        android:background="@drawable/custom_input"
+        android:textColorHint="@color/blue_grey_100"
+        android:id="@+id/signUpPassword"
+
+        android:paddingStart="@dimen/_8mdp"
+        android:layout_marginStart="@dimen/_8mdp"
+        android:layout_marginEnd="@dimen/_8mdp"
+        android:layout_marginTop="@dimen/_12mdp"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45mdp"
+        android:hint="Confirm Password"
+        android:textColor="@color/white"
+
+        android:drawableStart="@drawable/custom_email_input"
+        android:drawablePadding="@dimen/_8mdp"
+        android:background="@drawable/custom_input"
+        android:textColorHint="@color/blue_grey_100"
+        android:id="@+id/signUpConfirmPassword"
+        android:paddingStart="@dimen/_8mdp"
+        android:layout_marginStart="@dimen/_8mdp"
+        android:layout_marginEnd="@dimen/_8mdp"
+        android:layout_marginTop="@dimen/_12mdp"
+        />
+
+
+
+    <CheckBox
+        android:layout_width="@dimen/_170mdp"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:buttonTint="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginEnd="@dimen/_56mdp"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_15mdp"
+        android:id="@+id/login_checkBox"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/red_700"
+        android:text="Sign Up"
+        android:layout_marginTop="@dimen/_8mdp"
+        android:textSize="@dimen/_20font_mdp"
+        android:padding="@dimen/_8mdp"
+        android:id="@+id/button_Signup"
+        android:layout_margin="@dimen/_8mdp"/>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/red_700"
+        android:text="Log in"
+        android:textSize="@dimen/_20font_mdp"
+        android:padding="@dimen/_8mdp"
+        android:id="@+id/button_login_signup"
+        android:layout_margin="@dimen/_8mdp"/>
+
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_barSignUp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/white"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/_16mdp"/>
+
+
+</LinearLayout>

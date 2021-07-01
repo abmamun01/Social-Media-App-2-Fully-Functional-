@@ -9,13 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SocialMediaApp2">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activity.ImageActivity"></activity>
+        <activity android:name=".Activity.PrivecyActivity" />
+        <activity android:name=".Activity.UpdateProfile" />
+        <activity android:name=".Activity.CreateProfile" />
+        <activity android:name=".Activity.Splash_Screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activity.SignUpActivity" />
+        <activity android:name=".Activity.Login_Activity" />
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

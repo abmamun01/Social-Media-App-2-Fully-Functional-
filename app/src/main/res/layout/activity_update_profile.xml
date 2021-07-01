@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activity.UpdateProfile">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_24mdp"
+        android:fontFamily="@font/habibi"
+        android:gravity="center_horizontal"
+        android:text="Update Profile"
+        android:textAlignment="center"
+        android:textColor="@color/red_900"
+        android:textSize="@dimen/_30font_mdp" />
+    
+
+    <EditText
+        android:id="@+id/et_name_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/email_bg"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="6dp"
+        android:ellipsize="end"
+        android:hint="Name"
+        android:inputType="text"
+        android:scrollHorizontally="true"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/et_profession_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/email_bg"
+        android:drawableStart="@drawable/ic_baseline_work_24"
+        android:drawablePadding="6dp"
+        android:ellipsize="end"
+        android:hint="Profession"
+        android:inputType="text"
+        android:scrollHorizontally="true"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/et_bio_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/email_bg"
+        android:drawableStart="@drawable/ic_baseline_emoji_people_24"
+        android:drawablePadding="6dp"
+        android:ellipsize="end"
+        android:hint="Bio"
+        android:inputType="text"
+        android:scrollHorizontally="true"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/et_email_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/email_bg"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="5dp"
+        android:ellipsize="end"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:textColor="@color/black" />
+
+
+    <EditText
+        android:id="@+id/et_web_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/email_bg"
+        android:ellipsize="end"
+        android:hint="WebSite"
+        android:inputType="text"
+        android:scrollHorizontally="true"
+        android:textColor="@color/black" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_bg2"
+        android:text="Update Profile"
+        android:textSize="@dimen/_14font_mdp" />
+
+</LinearLayout>
