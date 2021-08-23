@@ -75,6 +75,6 @@ public class ImageActivity extends AppCompatActivity {
                     Toast.makeText(ImageActivity.this, "No Profile!", Toast.LENGTH_SHORT).show();
                 }
             }
-        })
+        });
     }
 }

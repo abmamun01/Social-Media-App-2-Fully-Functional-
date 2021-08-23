@@ -69,6 +69,7 @@ public class CreateProfile extends AppCompatActivity {
 
         member = new All_User_Member();
 
+
         imageView = findViewById(R.id.iv_cp);
         etName = findViewById(R.id.et_name_cp);
         etBio = findViewById(R.id.et_bio_cp);
@@ -195,6 +196,7 @@ public class CreateProfile extends AppCompatActivity {
             if (requestCode == PICK_IMAGE || requestCode == RESULT_OK || data != null || data.getData() != null) {
                 imageUri = data.getData();
                 Picasso.get().load(imageUri).into(imageView);
+             //   imageView.setRotation(-85);
 
             }
 
